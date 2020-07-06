@@ -1,0 +1,1 @@
+console.log('Нахожусь в index.js');
