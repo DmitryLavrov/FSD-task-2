@@ -1,20 +1,21 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const pug = require('./webpack/pug');
 const devserver = require('./webpack/devserver');
-// const sass = require('./webpack/sass');
-// const css = require('./webpack/css');
-// const extractCSS = require('./webpack/css.extract');
-// const images = require('./webpack/images');
+const sass = require('./webpack/sass');
+const css = require('./webpack/css');
+const extractCSS = require('./webpack/css.extract');
+const sourceMapLoader = require('./webpack/source-map-loader');
+const fileLoader = require('./webpack/fileloader');
 
 const PATHS = {
     src: path.join(__dirname, 'src'),
     build: path.join(__dirname, 'build')
 };
 
-const common = Object.assign({}, {
+const common = merge([{
         entry: {
             index: PATHS.src + '/index/index.js'
         },
@@ -38,19 +39,26 @@ const common = Object.assign({}, {
             }
         }
     },
-    pug()
-);
+    pug(),
+    fileLoader(),
+    sourceMapLoader(),
+]);
 
 module.exports = function(env) {
     if (env === 'production') {
-        return Object.assign({},
-            common, { mode: 'development' }
-        );
+        return merge([
+            common,
+            extractCSS(),
+            { mode: 'development' }
+        ]);
     }
     if (env === 'development') {
-        return Object.assign({},
+        return merge([
             common,
-            devserver()
-        );
+            devserver(),
+            extractCSS(),
+            // sass(),
+            // css()
+        ]);
     }
 }

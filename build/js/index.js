@@ -90,10 +90,22 @@
 /*!****************************!*\
   !*** ./src/index/index.js ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Нахожусь в index.js');\n\n//# sourceURL=webpack:///./src/index/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log('Нахожусь в index.js');\n\n//# sourceURL=webpack:///./src/index/index.js?");
+
+/***/ }),
+
+/***/ "./src/index/index.scss":
+/*!******************************!*\
+  !*** ./src/index/index.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/index/index.scss?");
 
 /***/ })
 
