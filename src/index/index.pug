@@ -10,30 +10,31 @@ html(lang="ru")
     //- .header-fixbar
     header.header
       .container
-        .header-inner
-          .header-logo
-            a(href="#", target="_blank")
+        .header__inner
+          a.logo(href="#")
+            picture.logo__img
               img(src=require("../components/logo/logo.svg").default, alt="logo")
-          nav.header-content 
-            ul.header-menu 
+          nav.menu 
+            ul.menu__list 
               li 
-                a.header-menu__item.header-menu__item--bold(href="#", target="_blank") О нас
+                a.menu__item.menu__item--bold(href="#") О нас
               li 
-                a.header-menu__item.header-menu__item--dropdown(href="#", target="_blank") Услуги
+                a.menu__item.menu__item--dropdown(href="#") Услуги
               li 
-                a.header-menu__item(href="#", target="_blank") Вакансии
+                a.menu__item(href="#") Вакансии
               li 
-                a.header-menu__item(href="#", target="_blank") Новости
+                a.menu__item(href="#") Новости
               li 
-                a.header-menu__item.header-menu__item--dropdown(href="#", target="_blank") Соглашения
-            ul.header-buttons 
+                a.menu__item.menu__item--dropdown(href="#") Соглашения
+          .header__user
+            ul.header__buttons 
               li 
-                a(href="#", target="_blank") 
-                  button.header-buttons__button.header-buttons__button--wight Войти
+                a(href="#") 
+                  button.header__btn.header__btn--white Войти
               li 
-                a(href="#", target="_blank") 
-                  button.header-buttons__button.header-buttons__button--blue Зарегистрироваться
-            .header-username Юлий Цезарь
+                a(href="#") 
+                  button.header__btn.header__btn--blue Зарегистрироваться
+            .header__username Юлий Цезарь
 
     .page
       .container

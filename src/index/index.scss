@@ -8,9 +8,7 @@
   font-weight: 400;
 }
 .container {
-  max-width: 1440px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .header {
@@ -20,25 +18,26 @@
   background-color: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
-.header-inner {
+.header__inner {
   display: flex;
   justify-content: space-between;
     align-items: center;
     height: 70px;
 }
-.header-logo {
-  width: 105.69px;
+.logo {
+  width: 105px;
   height: 40px;
-  background-color: #000022;
+  margin: 0;
+  // background-color: #000022;
 //   margin-top: 15px;
 }
-.header-content {
+.menu {
   display: flex;
   justify-content: flex-end;
 //   margin-top: 26px;
-  background-color: #009900;
+  // background-color: #009900;
 }
-.header-menu {
+.menu__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -46,19 +45,22 @@
   max-width: 446px;
   line-height: 17px;
 }
-.header-menu__item {
+.menu__item {
   margin-left: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.5);
 }
-.header-buttons {
+.header-user {
+  display: block;
+}
+.header__buttons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.header-buttons__button {
+.header__btn {
   height: 34px;
   margin-left: 20px;
   padding-left: 20px;
@@ -76,6 +78,6 @@
   // border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: 2px solid #bc9cff;
 }
-.header-username {
+.header__username {
   display: none;
 }
