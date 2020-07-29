@@ -1,8 +1,4 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+@import "../common/global";
 .page {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -52,6 +48,27 @@
   font-size: 14px;
   color: rgba(31, 32, 65, 0.5);
 }
+.menu__item--dropdown {
+  // border-right: 24px solid;
+  // background-image: require("../components/arrow-down.svg");
+  // background-position: center right;
+  // background-color: #7ff;
+  border-color: transparent;
+}
+.menu__item--dropdown::after { 
+  // width: 24px; 
+  // height: 100%; 
+  content: ""; 
+  background: url("../components/arrow-down.svg") no-repeat center right; 
+  display: block;
+}
+// {
+//   content:  url("../components/arrow-down.svg");
+//   // background-image: url("../components/arrow-down.svg");
+//   // background-repeat: no-repeat;
+//   // background-position: center right;
+// }
+
 .header-user {
   display: block;
 }
