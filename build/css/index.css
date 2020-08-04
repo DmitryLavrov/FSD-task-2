@@ -159,12 +159,19 @@ body {
   color: rgba(31, 32, 65, 0.5); }
 
 .menu__item--dropdown {
-  border-color: transparent; }
+  position: relative;
+  padding-right: 20px;
+}
 
 .menu__item--dropdown::after {
+  position: absolute;
   content: "";
-  background: url(../images/arrow-down.svg) no-repeat center right;
-  display: block; }
+  top: 20px;
+  left: 20px;
+  width: 24px;
+  height: 21px;
+  background: url(../images/arrow-down.svg) no-repeat 0 0;
+}
 
 .header-user {
   display: block; }

@@ -1,4 +1,7 @@
 @import "../common/global";
+@import "../common/fonts";
+@import "../common/vars";
+
 .page {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -17,20 +20,20 @@
 .header__inner {
   display: flex;
   justify-content: space-between;
-    align-items: center;
-    height: 70px;
+  align-items: center;
+  height: 70px;
 }
 .logo {
   width: 105px;
   height: 40px;
   margin: 0;
   // background-color: #000022;
-//   margin-top: 15px;
+  //   margin-top: 15px;
 }
 .menu {
   display: flex;
   justify-content: flex-end;
-//   margin-top: 26px;
+  //   margin-top: 26px;
   // background-color: #009900;
 }
 .menu__list {
@@ -38,42 +41,41 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  max-width: 446px;
+  // max-width: 446px;
+  font-size: 14px;
   line-height: 17px;
 }
 .menu__item {
+  @extend %ms-regular;
   margin-left: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.5);
-}
-.menu__item--dropdown {
-  // border-right: 24px solid;
-  // background-image: require("../components/arrow-down.svg");
-  // background-position: center right;
-  // background-color: #7ff;
-  border-color: transparent;
-}
-.menu__item--dropdown::after { 
-  // width: 24px; 
-  // height: 100%; 
-  content: ""; 
-  background: url("../components/arrow-down.svg") no-repeat center right; 
-  display: block;
-}
-// {
-//   content:  url("../components/arrow-down.svg");
-//   // background-image: url("../components/arrow-down.svg");
-//   // background-repeat: no-repeat;
-//   // background-position: center right;
-// }
+  color: #1f2041;
+  opacity: 50%;
 
-.header-user {
-  display: block;
+  &:hover,
+  &:focus,
+  &:active {
+    @extend %ms-bold;
+    opacity: 75%;
+    margin-left: 16px;
+  }
 }
+
+.menu__item--dropdown {
+  position: relative;
+  padding-right: 24px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 4px;
+    width: 24px;
+    height: 21px;
+    background: url("../components/arrow-down.svg") no-repeat right;
+  }
+}
+
 .header__buttons {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
 }
@@ -96,5 +98,8 @@
   border: 2px solid #bc9cff;
 }
 .header__username {
-  display: none;
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 20px;
 }
