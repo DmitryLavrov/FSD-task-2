@@ -1,0 +1,28 @@
+//- .header-fixbar
+header.header
+	.container
+		.header__inner
+			a.logo(href="#")
+				picture.logo__img
+					img(src=require("../components/logo/logo.svg").default, alt="logo")
+			
+			nav.menu 
+				ul.menu__list 
+					li 
+						a.menu__item(href="#") О нас
+					li 
+						a.menu__item.menu__item--dropdown(href="#") Услуги
+					li 
+						a.menu__item(href="#") Вакансии
+					li 
+						a.menu__item(href="#") Новости
+					li 
+						a.menu__item.menu__item--dropdown(href="#") Соглашения
+				ul.header__buttons 
+					li 
+						a(href="#") 
+							button.header__btn.header__btn--white Войти
+					li 
+						a(href="#") 
+							button.header__btn.header__btn--blue Зарегистрироваться
+				.header__username Юлий Цезарь

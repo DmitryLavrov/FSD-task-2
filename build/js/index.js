@@ -97,6 +97,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
+/***/ "./src/header/header.scss":
+/*!********************************!*\
+  !*** ./src/header/header.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/header/header.scss?");
+
+/***/ }),
+
 /***/ "./src/index/index.js":
 /*!****************************!*\
   !*** ./src/index/index.js ***!
@@ -105,7 +116,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/reset.scss */ \"./src/common/reset.scss\");\n/* harmony import */ var _common_reset_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_common_reset_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ \"./src/index/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nconsole.log('Нахожусь в index.js');\n\n//# sourceURL=webpack:///./src/index/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/reset.scss */ \"./src/common/reset.scss\");\n/* harmony import */ var _common_reset_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_common_reset_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../header/header.scss */ \"./src/header/header.scss\");\n/* harmony import */ var _header_header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header_header_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ \"./src/index/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconsole.log('Нахожусь в index.js');\n\n//# sourceURL=webpack:///./src/index/index.js?");
 
 /***/ }),
 
